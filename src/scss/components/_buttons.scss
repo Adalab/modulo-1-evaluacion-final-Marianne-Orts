@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-cursor: pointer;
+  cursor: pointer;
   &--span {
     width: 16px;
     height: 5px;
@@ -20,7 +20,6 @@ cursor: pointer;
     display: block;
     border-top: 4px white solid;
     border-top-width: 2px;
-    
   }
 }
 /* HERO SCROLL BUTTON */
@@ -34,11 +33,10 @@ cursor: pointer;
   align-items: center;
   margin-top: 50px;
   &--icon {
-
   }
 }
 /* TIPS GO */
-.page__tips--go{
+.page__tips--go {
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
@@ -47,15 +45,48 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
+  transition: background-color ease 1s, color ease 1s;
+  &:hover {
+    background-color: $color-buttons;
+    color: white;
+  }
 }
 /* MORE REASONS */
-.page__reasons--more-reasons{
+.page__reasons--more-reasons {
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
   background-color: $color-buttons;
   border: 2px solid $color-buttons;
   padding: 10px;
-    
+  transition: background-color ease 1s, color ease 1s;
+  &:hover {
+    background-color: white;
+    color: $color-buttons;
+  }
+}
+/* FOOTER ARROW BUTTON */
+.page__footer--arrow {
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55px;
+  animation-name: intro;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+@keyframes intro {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }

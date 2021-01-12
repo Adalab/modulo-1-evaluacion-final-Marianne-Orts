@@ -1,6 +1,6 @@
 .page__reasons {
   width: 100%;
-  height: 550px;
+  height: 575px;
   background-color: $color-bg-reasons;
   padding: 30px 0 50px 0;
   text-align: center;
@@ -14,64 +14,29 @@
   }
   &--more-reasons {
     font-family: $font-secondary;
-    font-weight: bold;
     font-size: 20px;
     color: white;
   }
 }
 
-.reason {
+.reason__grid {
   padding: 30px 68px;
   display: grid;
   grid-template-columns: 1fr;
-    
-  &__ut {
-    grid-column: 1 / 2;
-    &--title {
-      font-family: $font-main;
-      font-size: 18px;
-      font-weight: bold;
-      color: $color-title;
-      margin-bottom: 6px;
-    }
-    &--content {
-      font-family: $font-secondary;
-      font-size: 18px;
-      color: $color-content;
-      margin-bottom: 45px;
-    }
+}
+.reason__item {
+  grid-column: 1 / 2;
+  &--title {
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-title;
+    margin-bottom: 6px;
   }
-  
-  &--curabitur {
-    grid-column: 1 / 2;
-    &--title {
-      font-family: $font-main;
-      font-size: 18px;
-      font-weight: bold;
-      color: $color-title;
-      margin-bottom: 6px;
-    }
-    &--content {
-      font-family: $font-secondary;
-      font-size: 18px;
-      color: $color-content;
-      margin-bottom: 45px;
-    }
-  }
-  &--morbi {
-    grid-column: 1 / 2;
-    &--title {
-      font-family: $font-main;
-      font-size: 18px;
-      font-weight: bold;
-      color: $color-title;
-      margin-bottom: 6px;
-    }
-    &--content {
-      font-family: $font-secondary;
-      font-size: 18px;
-      color: $color-content;
-      margin-bottom: 45px;
-    }
+  &--content {
+    font-family: $font-secondary;
+    font-size: 18px;
+    color: $color-content;
+    margin-bottom: 45px;
   }
 }
