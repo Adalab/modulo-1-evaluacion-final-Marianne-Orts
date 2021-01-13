@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   &--span {
     width: 16px;
     height: 5px;
@@ -35,7 +35,7 @@
   &--icon {
   }
 }
-/* TIPS GO */
+/* TIPS GO BUTTON*/
 .page__tips--go {
   width: 76px;
   height: 45px;
@@ -52,7 +52,7 @@
     color: white;
   }
 }
-/* MORE REASONS */
+/* MORE REASONS BUTTON */
 .page__reasons--more-reasons {
   width: 184px;
   height: 45px;
@@ -67,7 +67,7 @@
   }
 }
 /* FOOTER ARROW BUTTON */
-.page__footer--arrow {
+.page__footer--arrow-up {
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
@@ -89,4 +89,9 @@
   to {
     transform: scale(1);
   }
+}
+@media all and (min-width: 1200px){
+  .page__reasons--more-reasons {
+    width: 215px;
+}
 }
