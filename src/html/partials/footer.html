@@ -1,9 +1,12 @@
 <footer class="page__footer">
-  <a href="#hero">
+  <!-- ancla que coge todo el div del arrow para que redireccione a la seccion hero -->
+  <!-- lo ponemos solo para que no se mueva con el flex -->
+  <a href="#hero"> 
     <div class="page__footer--arrow">
       <img class="page__footer--arrow-up" src="./assets/images/ico-arrow.svg" title="Arrow image"/>
     </div>
   </a>
+  <!-- creo una seccion para poder ponerle flex y mover los tres elementos( menu, social y copy) -->
 <section class="page__footer--flex">
   <nav>
     <ul class="page__footer--menu">
@@ -24,6 +27,7 @@
     </ul>
   </nav>
   <div class="page__footer--copy">
+    <!-- con el &copy se genera automaticamente el simbolo del copyright-->
     <small>&copy; 2021</small>
     <small>we <span class="page__footer--copy-heart">❤︎</span> components</small>
   </div>

@@ -7,7 +7,9 @@
   height: 100vh;
   &--image {
     height: 100vh;
-    position: absolute;
+    /* posicion abosluta con respecto a body, ya que no tiene un ancestro con relative o fixed */
+    /* z-indez, que tenga mas peso y se coloque por debajo */
+    position: absolute; 
     top: 0;
     z-index: -2;
   }
@@ -15,8 +17,10 @@
     font-family: $font-main;
     color: $color-text-hero;
     font-size: 42px;
+    /* uppercase para que el texto se ponga en mayuscula */
     text-transform: uppercase;
     text-align: center;
+    /* 50vh para que se ponag a mitad del viewport */
     margin: 50vh 15px 10px 15px;
   }
   &--subtitle {

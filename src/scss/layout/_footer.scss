@@ -21,7 +21,9 @@
     text-align: center;
   }
   &--menu {
+    /* quitar puntos del listado */
     list-style: none;
+    /* espaciar los elementos del listado */
     line-height: 1.5em;
   }
   &--social {

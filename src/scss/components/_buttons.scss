@@ -1,5 +1,6 @@
 /* HERO HAMBURGUER BUTTON */
 .hero__hamburguer {
+  /* hacer cuadrado azul */
   width: 44px;
   height: 44px;
   background-color: $color-hamburguer-icon;
@@ -11,16 +12,17 @@
   justify-content: center;
   align-items: center;
   /* cursor: pointer; */
+
+  /* hacer las tres rayitas de la hamburguesa, con grosor, blancas y centradas */
   &--span {
     width: 16px;
     height: 5px;
-
     text-decoration: line;
     text-align: center;
     display: block;
     border-top: 4px white solid;
     border-top-width: 2px;
-  }
+  } 
 }
 /* HERO SCROLL BUTTON */
 .hero__scroll-down {
@@ -28,9 +30,11 @@
   height: 45px;
   border-radius: 22.5px;
   background-color: white;
+  /* este display es para que el icono se ponga el icono centrado  */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* separar circulo del texto */
   margin-top: 50px;
   &--icon {
   }
@@ -45,7 +49,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* desplazar boton hacia abajo */
   margin-top: 70px;
+  /* hacer cambio de color en boton y texto */
   transition: background-color ease 1s, color ease 1s;
   &:hover {
     background-color: $color-buttons;
@@ -59,7 +65,9 @@
   border-radius: 22.5px;
   background-color: $color-buttons;
   border: 2px solid $color-buttons;
+  /* hacer la caja mas grande, se quedaba pequeña  */
   padding: 10px;
+/* hacer cambio de color en boton y texto */
   transition: background-color ease 1s, color ease 1s;
   &:hover {
     background-color: white;
@@ -75,7 +83,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* para que se coloque en esa posicion */
   margin-top: -55px;
+  /* hacer animación */
   animation-name: intro;
   animation-duration: 2s;
   animation-iteration-count: infinite;
