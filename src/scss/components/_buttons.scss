@@ -32,25 +32,31 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  display: none;
   &--icon {
   }
 }
 /* TIPS GO BUTTON*/
 .page__tips--go {
-  width: 76px;
+  width: 146px;
   height: 45px;
   border-radius: 22.5px;
-  background-color: white;
+  background-color: $color-buttons;
   border: 2px solid $color-buttons;
+  /* padding: 10px; */
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  transition: background-color ease 1s, color ease 1s;
+  margin-top: 90px;
+
+  
+
+  /* transition: background-color ease 1s, color ease 1s;
   &:hover {
     background-color: $color-buttons;
     color: white;
-  }
+  } */
 }
 /* MORE REASONS BUTTON */
 .page__reasons--more-reasons {
@@ -90,8 +96,19 @@
     transform: scale(1);
   }
 }
+@media all and (min-width: 768px){
+.hero__scroll-down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+}
 @media all and (min-width: 1200px){
   .page__reasons--more-reasons {
     width: 215px;
+}
+.hero__scroll-down {
+  
 }
 }

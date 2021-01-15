@@ -3,6 +3,11 @@
   height: 350px;
   padding: 0 30px;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;;
+  
   &--name {
     font-family: $font-secondary;
     font-size: 14px;
@@ -26,16 +31,18 @@
   &--go {
     font-family: $font-secondary;
     font-size: 20px;
-    color: $color-buttons;
+    color: white;
   }
 }
 @media all and (min-width: 768px){
   .page__tips {
     height: 315px;
     padding: 0 50px;
+    
     &--title{   
       font-size: 26px;
       margin-bottom: 30px;
+      order: -1;
     }
     &--content{
       font-size: 20px;
@@ -53,6 +60,7 @@
     &--title{   
       font-size: 32px;
       margin-bottom: 30px;
+      order: 0;
     }
   }
 }  
