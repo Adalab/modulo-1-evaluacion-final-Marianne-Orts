@@ -12,8 +12,9 @@
   }
   &--flex {
     width: 100%;
-    /* height: 420px; */
-    height: 100%;
+    /* SE QUITA TODO HEIGHT DEL FLEX, YA QUE NO DEJABA EXPANDIR TODO EL FOOTER */
+    /*  height: 420px; */
+    height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

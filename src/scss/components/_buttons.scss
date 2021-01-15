@@ -75,14 +75,18 @@
   }
 }
 /* FOOTER ARROW BUTTON */
+
 .page__footer--arrow-up {
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
   background-color: white;
-  display: flex;
+  /* aqui está porque aumentaba la flecha, por le padding */
+  padding: 8px;
+  /* este display aqui no sirve, porque ya lo tiene su contenedor(arrow) */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* para que se coloque en esa posicion */
   margin-top: -55px;
   /* hacer animación */
