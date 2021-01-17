@@ -1,18 +1,23 @@
 .page__hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* este display se pone en el contenedor, poer afecta al contenido */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  &--image {
+  
+  /* &--image {
     height: 100vh;
     /* posicion abosluta con respecto a body, ya que no tiene un ancestro con relative o fixed */
     /* z-indez, que tenga mas peso y se coloque por debajo */
-    position: absolute; 
+    /* position: absolute; 
     top: 0;
-    z-index: -2;
-  }
+    z-index: -2; */
+  
   &--title {
     font-family: $font-main;
     color: $color-text-hero;
