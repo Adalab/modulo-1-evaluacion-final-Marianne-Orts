@@ -13,8 +13,8 @@
   &--flex {
     width: 100%;
     /* SE QUITA TODO HEIGHT DEL FLEX, YA QUE NO DEJABA EXPANDIR TODO EL FOOTER */
-    /*  height: 420px; */
-    height: 100%; 
+    /*  se calcula a mano con calc */
+    height: calc(100% - 45px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
