@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>M1-Evaluación Final-M.Orts</title>
+   <!--  primero se pone este enlace general de las fuentes que es igual para las dos fuentes que tenemos -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -13,29 +14,39 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
+    <!-- mas tarde el link para enlazar el css de public -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
+  <!-- en el body se ponen los includes de los partials que hemos realizado -->
       <body>
       <div class="page">
         <hero id="hero" class="page__hero">
-          <img
+          <!-- toca cambiar la imagen por background -->
+          <!-- <img
             class="page__hero--image"
             src="./assets/images/cover.jpg"
             alt="New York"
             title="Scene of New York"
-          />
+          /> -->
           <h1 class="page__hero--title">Anonymous proxy</h1>
           <p class="page__hero--subtitle">In hac habitasse platea dictumst.</p>
-          <a href="https://adalab.es" title="Go to Adalab">
+          
+          <!-- ancla que coge todo el div de icono hamburguer para que redireccione a la pagina exterior de Adalab -->
+        <a href="https://adalab.es" title="Go to Adalab">
+            
           <div class="hero__hamburguer">
-          <span class="hero__hamburguer--span"> </span>
-          <span class="hero__hamburguer--span"> </span>
-          <span class="hero__hamburguer--span"> </span>
-        </div>
+            <span class="hero__hamburguer--span"> </span>
+            <span class="hero__hamburguer--span"> </span>
+            <span class="hero__hamburguer--span"> </span>
+           </div>
         </a>
-          <a href="#reasons"><div class="hero__scroll-down">
+        <!-- ancla que coge todo el div del scroll-down para que redireccione a reasons section -->
+          <a href="#reasons">
+            <div class="hero__scroll-down">
             <img class="hero__scroll-down--icon" src="./assets/images/ico-scroll-down.svg" title="Scroll image"></img> 
-          </div></a>
+          </div>
+        </a>
+
         </hero>
 
         <section class="page__tips">
@@ -45,15 +56,19 @@
             Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
             luctus ex diam nec lectus. Vivamus semper sodales rutrum.
           </p>
+          
           <span class="page__tips--go">Go</span>
         </section>
 
 
 
+        <!-- en esta seccion está la id="reasons" que nos sergviar para redireccionar dentro de la misma pagina  -->
         <section id="reasons" class="page__reasons">
-          <h2 class="page__reasons--title">3 Reasons To Purchase</h2>
-          
+            <h2 class="page__reasons--title">3 Reasons To Purchase</h2>
+
+          <!-- creo otra seccion para mover en grid los 3 items  -->
           <section class="reason__grid">
+            
             <div class="reason__item">
               <h3 class="reason__item--title">Ut sed metus</h3>
               <p class="reason__item--content">Lorem ipsum dolor sit amet, consecteur.</p>
@@ -76,11 +91,14 @@
         </section>
 
         <footer class="page__footer">
-          <a href="#hero">
+          <!-- ancla que coge todo el div del arrow para que redireccione a la seccion hero -->
+          <!-- lo ponemos solo para que no se mueva con el flex -->
+          <a href="#hero"> 
             <div class="page__footer--arrow">
               <img class="page__footer--arrow-up" src="./assets/images/ico-arrow.svg" title="Arrow image"/>
             </div>
           </a>
+          <!-- creo una seccion para poder ponerle flex y mover los tres elementos( menu, social y copy) -->
         <section class="page__footer--flex">
           <nav>
             <ul class="page__footer--menu">
@@ -101,6 +119,7 @@
             </ul>
           </nav>
           <div class="page__footer--copy">
+            <!-- con el &copy se genera automaticamente el simbolo del copyright-->
             <small>&copy; 2021</small>
             <small>we <span class="page__footer--copy-heart">❤︎</span> components</small>
           </div>
