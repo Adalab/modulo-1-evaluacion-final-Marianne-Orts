@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
   }
+  
   &--flex {
     width: 100%;
     /* SE QUITA TODO HEIGHT DEL FLEX, YA QUE NO DEJABA EXPANDIR TODO EL FOOTER */
@@ -57,6 +58,9 @@
   &--copy-heart {
     color: $color-buttons;
   }
+}
+.anchor:active{
+  background-color:$color-bg-footer;
 }
 @media all and (min-width: 768px) {
   .page__footer {
