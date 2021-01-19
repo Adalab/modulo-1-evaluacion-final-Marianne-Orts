@@ -22,7 +22,7 @@
     display: block;
     border-top: 4px white solid;
     border-top-width: 2px;
-  } 
+  }
 }
 /* HERO SCROLL BUTTON */
 .hero__scroll-down {
@@ -35,7 +35,11 @@
   justify-content: center;
   align-items: center;
   /* separar circulo del texto */
-  margin-top: 50px;
+  margin-top: 20px;
+  /* eliminar como sombra al clickar */
+  &:active {
+    user-select: none;
+  }
 }
 /* TIPS GO BUTTON*/
 .page__tips--go {
@@ -65,7 +69,7 @@
   border: 2px solid $color-buttons;
   /* hacer la caja mas grande, se quedaba pequeña  */
   padding: 10px;
-/* hacer cambio de color en boton y texto */
+  /* hacer cambio de color en boton y texto */
   transition: background-color ease 1s, color ease 1s;
   &:hover {
     background-color: white;
@@ -79,10 +83,10 @@
   height: 45px;
   border-radius: 22.5px;
   background-color: white;
-  
+
   /* aqui está porque aumentaba la flecha, por le padding */
   padding: 8px;
-   /* este display aqui no sirve, porque ya lo tiene su contenedor(arrow) */
+  /* este display aqui no sirve, porque ya lo tiene su contenedor(arrow) */
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -94,6 +98,9 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-direction: alternate;
+  &:active {
+    user-select: none;
+  }
 }
 @keyframes intro {
   from {
@@ -103,8 +110,8 @@
     transform: scale(1);
   }
 }
-@media all and (min-width: 1200px){
+@media all and (min-width: 1200px) {
   .page__reasons--more-reasons {
     width: 215px;
-}
+  }
 }

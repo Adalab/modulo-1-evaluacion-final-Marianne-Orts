@@ -36,24 +36,28 @@
     font-size: 18px;
     color: $color-content;
     margin-bottom: 45px;
+    /* para PONER LO SELECCIONADO EN NARANJA en vez de azul por defecto */
+    &::selection {
+      background-color: rgb(238, 148, 148);
+    }
   }
 }
-@media all and (min-width: 768px){
-  .page__reasons{
+@media all and (min-width: 768px) {
+  .page__reasons {
     height: 397px;
     padding: 50px 0 0 0;
   }
-  .reason__grid{
-  grid-template-rows: 1fr;
-  grid-template-columns: 30%;
+  .reason__grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 30%;
   }
-  .reason__item{
+  .reason__item {
     grid-row: 1 / 2;
     grid-column: span 1;
   }
 }
-@media all and (min-width: 1200px){
-  .page__reasons{
+@media all and (min-width: 1200px) {
+  .page__reasons {
     height: 427px;
     padding: 50px 150px 0 150px;
   }
